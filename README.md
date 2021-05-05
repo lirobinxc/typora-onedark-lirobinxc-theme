@@ -2,6 +2,12 @@
 
 A **DARK** theme for Typora inspired by One Dark theme and Material Design.
 
+## lirobinxc EDITS
+* Coloured headers
+* Coloured bold text
+* Coloured em text
+* Removed header shadows
+
 ## Feature
 
 * Color scheme inspired by One Dark theme.
