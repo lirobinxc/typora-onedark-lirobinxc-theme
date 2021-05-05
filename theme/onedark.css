@@ -1,4 +1,11 @@
 :root {
+  /* lirobinxc custom edits */
+  --h1-text-color: rgb(253, 171, 171);
+  --h2-text-color: rgb(171, 200, 253);
+  --bold-text-color: rgb(171, 200, 253);
+  --highlighted-text-bg-color: #fff59b;
+  --em-text-color: #fcbb6d;
+
   /* dark color for background*/
   /* default color */
   --bg-color1: hsl(220, 13%, 18%);
@@ -103,31 +110,31 @@
 
 /* font */
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
-  src: local("Open Sans Regular"), url("./onedark/400.woff") format("woff");
+  src: local('Open Sans Regular'), url('./onedark/400.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: italic;
   font-weight: normal;
-  src: local("Open Sans Italic"), url("./onedark/400i.woff") format("woff");
+  src: local('Open Sans Italic'), url('./onedark/400i.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
-  src: local("Open Sans Bold"), url("./onedark/700.woff") format("woff");
+  src: local('Open Sans Bold'), url('./onedark/700.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: italic;
   font-weight: bold;
-  src: local("Open Sans Bold Italic"), url("./onedark/700i.woff") format("woff");
+  src: local('Open Sans Bold Italic'), url('./onedark/700i.woff') format('woff');
 }
 
 /* basic style */
@@ -136,7 +143,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial,
+  font-family: 'Open Sans', 'Clear Sans', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
   color: var(--text-color1);
   background: var(--bg-color1);
@@ -149,11 +156,11 @@ body {
 }
 
 /* link */
-#write a:not([role="menuitem"]) {
+#write a:not([role='menuitem']) {
   color: var(--link-color) !important;
 }
 
-#write a:not([role="menuitem"]):hover {
+#write a:not([role='menuitem']):hover {
   color: var(--hover-text-color) !important;
 }
 
@@ -167,7 +174,7 @@ body {
   margin-top: 0.5em;
   margin-bottom: 0em;
   line-height: 1em;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); */
   padding-top: 0.3em;
 }
 
@@ -175,7 +182,7 @@ body {
   font-size: 2.5em;
   padding-bottom: 0.5em;
   border-bottom: 3px double var(--text-color5);
-  
+  color: var(--h1-text-color);
 }
 
 /* #write h1:before {
@@ -186,6 +193,7 @@ body {
   font-size: 2em;
   padding-bottom: 0.5em;
   border-bottom: 3px double var(--text-color5);
+  color: var(--h2-text-color);
 }
 
 /* #write h2:before {
@@ -208,6 +216,25 @@ body {
 
 #write h6 {
   font-size: 1.2em;
+}
+
+/* Bold, italics */
+b,
+dt,
+strong {
+  color: var(--bold-text-color);
+}
+
+i {
+  color: var(--em-text-color);
+}
+
+em {
+  color: var(--em-text-color);
+}
+
+mark {
+  background: var(--highlighted-text-bg-color);
 }
 
 /* horizontal divider */
@@ -337,12 +364,12 @@ table tr td:last-child {
 }
 
 /* existing thread grid */
-.md-grid-board tr[row="1"] .md-grid-ext {
+.md-grid-board tr[row='1'] .md-grid-ext {
   background-color: rgb(60, 60, 60);
 }
 
 /* not existing thread grid */
-.md-grid-board tr[row="1"] {
+.md-grid-board tr[row='1'] {
   background-color: rgb(220, 220, 220);
 }
 
@@ -352,8 +379,8 @@ table tr td:last-child {
 }
 
 /* selected thread grid */
-.md-grid-board tr[row="1"] a.md-active,
-.md-grid-board tr[row="1"] a:hover {
+.md-grid-board tr[row='1'] a.md-active,
+.md-grid-board tr[row='1'] a:hover {
   background-color: rgb(60, 60, 60);
 }
 
@@ -429,8 +456,8 @@ input {
     background-color: var(--hover-bg-color2) !important;
 } */
 /* checkbox */
-input[type="checkbox"]:before {
-  content: "";
+input[type='checkbox']:before {
+  content: '';
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
@@ -445,32 +472,32 @@ input[type="checkbox"]:before {
 }
 
 /* checkbox hover */
-input[type="checkbox"]:not([disabled]):not(:checked):hover:before {
-  content: "\2713";
+input[type='checkbox']:not([disabled]):not(:checked):hover:before {
+  content: '\2713';
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--text-color3);
 }
 
 /* checkbox checked*/
-input[type="checkbox"]:checked:before {
-  content: "\2713";
+input[type='checkbox']:checked:before {
+  content: '\2713';
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--text-color2);
 }
 
 /* checkbox checked hover*/
-input[type="checkbox"]:checked:hover:before {
-  content: "\2713";
+input[type='checkbox']:checked:hover:before {
+  content: '\2713';
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: var(--hover-text-color);
 }
 
 /* radio */
-input[type="radio"]:before {
-  content: "";
+input[type='radio']:before {
+  content: '';
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
@@ -485,24 +512,24 @@ input[type="radio"]:before {
 }
 
 /* radio hover */
-input[type="radio"]:not([disabled]):not(:checked):hover:before {
-  content: "\25CF";
+input[type='radio']:not([disabled]):not(:checked):hover:before {
+  content: '\25CF';
   font-size: 1rem;
   line-height: 1rem;
   color: var(--text-color3);
 }
 
 /* radio checked */
-input[type="radio"]:checked:before {
-  content: "\25CF";
+input[type='radio']:checked:before {
+  content: '\25CF';
   font-size: 1rem;
   line-height: 1rem;
   color: var(--text-color2);
 }
 
 /* radio checked hover*/
-input[type="radio"]:checked:before {
-  content: "\25CF";
+input[type='radio']:checked:before {
+  content: '\25CF';
   font-size: 1rem;
   line-height: 1rem;
   color: var(--hover-text-color);
@@ -769,13 +796,13 @@ input[type="radio"]:checked:before {
 }
 
 /* remove up and down button from number type input*/
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none !important;
 }
 
 /* the indent example in setting.editor */
-div[data-index="2"] .label-input-group td:last-child div {
+div[data-index='2'] .label-input-group td:last-child div {
   border: 0px !important;
   border-radius: 6px;
   background-color: var(--bg-color5);
@@ -1563,7 +1590,7 @@ text.actor {
   stroke: var(--menu-divider-color) !important;
 }
 
-rect[class*="activation"] {
+rect[class*='activation'] {
   fill: var(--bg-color2) !important;
 }
 
@@ -1755,17 +1782,17 @@ g.classGroup line {
   stroke-width: 0.3px !important;
 }
 
-pre[mermaid-type="journey"] line {
+pre[mermaid-type='journey'] line {
   stroke: var(--menu-divider-color) !important;
   stroke-width: 2px !important;
 }
 
-pre[mermaid-type="journey"] text {
+pre[mermaid-type='journey'] text {
   fill: var(--text-color1) !important;
 }
 
-pre[mermaid-type="journey"] g path,
-pre[mermaid-type="journey"] g line {
+pre[mermaid-type='journey'] g path,
+pre[mermaid-type='journey'] g line {
   fill: rgb(100, 104, 110) !important;
   stroke: var(--text-color) !important;
 }
@@ -1775,15 +1802,15 @@ pre[mermaid-type="journey"] g line {
 }
 
 /* mermaid erDiagram */
-pre[mermaid-type="erDiagram"] rect {
+pre[mermaid-type='erDiagram'] rect {
   fill: var(--bg-color2) !important;
 }
 
-pre[mermaid-type="erDiagram"] text {
+pre[mermaid-type='erDiagram'] text {
   fill: var(--text-color) !important;
 }
 
-pre[mermaid-type="erDiagram"] path {
+pre[mermaid-type='erDiagram'] path {
   stroke: var(--menu-divider-color) !important;
 }
 
@@ -1904,43 +1931,43 @@ g > text.slice {
 }
 
 /* flow diagram */
-.md-fences[lang="flow"] .md-diagram-panel-preview rect {
+.md-fences[lang='flow'] .md-diagram-panel-preview rect {
   fill: var(--bg-color2) !important;
   stroke: var(--menu-divider-color) !important;
   stroke-width: 1.2 !important;
 }
 
-.md-fences[lang="flow"] .md-diagram-panel-preview path {
+.md-fences[lang='flow'] .md-diagram-panel-preview path {
   stroke: var(--menu-divider-color) !important;
   stroke-width: 1.2 !important;
 }
 
-.md-fences[lang="flow"] #cond {
+.md-fences[lang='flow'] #cond {
   fill: var(--bg-color2) !important;
 }
 
 /* sequence diagram */
-.md-fences[lang="sequence"] .md-diagram-panel-preview rect:not([fill="none"]) {
+.md-fences[lang='sequence'] .md-diagram-panel-preview rect:not([fill='none']) {
   fill: var(--bg-color2) !important;
   stroke: var(--menu-divider-color) !important;
   stroke-width: 1.2 !important;
 }
 
-.md-fences[lang="sequence"] .md-diagram-panel-preview path {
+.md-fences[lang='sequence'] .md-diagram-panel-preview path {
   fill: var(--menu-divider-color) !important;
   stroke: var(--menu-divider-color) !important;
   stroke-width: 1.2 !important;
 }
 
-.md-fences[lang="sequence"] text,
-.md-fences[lang="flow"] text {
-  font-family: "Consolas" !important;
+.md-fences[lang='sequence'] text,
+.md-fences[lang='flow'] text {
+  font-family: 'Consolas' !important;
 }
 
 /* remove box shadow when not edit graph */
-.md-fences[lang="sequence"]:not(.md-focus),
-.md-fences[lang="mermaid"]:not(.md-focus),
-.md-fences[lang="flow"]:not(.md-focus) {
+.md-fences[lang='sequence']:not(.md-focus),
+.md-fences[lang='mermaid']:not(.md-focus),
+.md-fences[lang='flow']:not(.md-focus) {
   box-shadow: none;
 }
 
@@ -1952,7 +1979,7 @@ g > text.slice {
 kbd {
   background: var(--bg-color5);
   color: var(--text-color1);
-  font-family: "Lucida Console";
+  font-family: 'Lucida Console';
   border-color: var(--menu-divider-color);
   box-shadow: 0 2px 0 var(--menu-divider-color);
 }
