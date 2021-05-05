@@ -1,10 +1,10 @@
 :root {
   /* lirobinxc custom edits */
-  --h1-text-color: rgb(253, 171, 171);
-  --h2-text-color: rgb(171, 200, 253);
-  --bold-text-color: rgb(171, 200, 253);
+  --h1-text-color: rgb(235, 149, 149);
+  --h2-text-color: rgb(156, 181, 228);
+  --bold-text-color: rgb(144, 194, 236);
   --highlighted-text-bg-color: #fff59b;
-  --em-text-color: #fcbb6d;
+  --em-text-color: #ddb17b;
 
   /* dark color for background*/
   /* default color */
