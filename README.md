@@ -3,10 +3,10 @@
 A **DARK** theme for Typora inspired by One Dark theme and Material Design.
 
 ## lirobinxc EDITS
-* Coloured headers
-* Coloured bold text
-* Coloured em text
-* Removed header shadows
+* Added: Coloured headers.
+* Added: Coloured bold text.
+* Added: Coloured em text.
+* Removed: Header drop-shadows.
 
 ## Feature
 
