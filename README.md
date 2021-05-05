@@ -1,4 +1,4 @@
-# OneDark Theme
+# OneDark (Forked) Theme
 
 A **DARK** theme for Typora inspired by One Dark theme and Material Design.
 
